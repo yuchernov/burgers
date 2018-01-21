@@ -345,11 +345,14 @@ a.new:after {
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+  height: 50vh; }
 
 .line img {
   -o-object-fit: cover;
-  object-fit: cover; }
+  object-fit: cover;
+  width: 100%;
+  height: 100%; }
 
 .img-line {
   width: 25%;
@@ -390,5 +393,10 @@ a.new:after {
 #third--id {
   color: white;
   font-size: 14px; }
+
+.reviews__content {
+  position: absolute;
+  min-height: 100%;
+  width: 100%; }
 
 /*# sourceMappingURL=main.css.map */
