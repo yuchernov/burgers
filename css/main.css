@@ -333,7 +333,14 @@ a.new:after {
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
-  font-size: 0; }
+  font-size: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
 
 .line {
   display: -webkit-flex;
@@ -346,7 +353,9 @@ a.new:after {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 50vh; }
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto; }
 
 .line img {
   -o-object-fit: cover;
