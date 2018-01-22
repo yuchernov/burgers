@@ -369,43 +369,105 @@ a.new:after {
 
 .line__first {
   position: absolute;
-  top: 50px;
+  top: 3.125rem;
   left: 20px;
   font-family: 'Gagalin'; }
 
 .line__second {
   position: absolute;
-  top: 80px;
-  left: 20px;
-  width: 240px; }
+  top: 5rem;
+  left: 1.25rem;
+  width: 15rem; }
 
 .line__third {
   position: absolute;
-  top: 235px;
-  left: 20px;
+  top: 14.6875rem;
+  left: 1.25rem;
   background-color: #2f3234;
-  padding: 10px;
-  border-radius: 7px; }
+  padding: 0.625rem;
+  border-radius: 0.4375rem; }
 
 .line__third:hover {
   background-color: #1f2122; }
 
 #first--id {
   color: white;
-  font-size: 14px; }
+  font-size: 0.875rem; }
 
 #second--id {
   color: white;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.7; }
 
 #third--id {
   color: white;
-  font-size: 14px; }
+  font-size: 0.875rem; }
 
 .reviews__content {
   position: absolute;
   min-height: 100%;
   width: 100%; }
+
+.team {
+  background-image: url("../../img/bg/bg3.png");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  position: relative; }
+
+.team__right {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  right: 0rem;
+  background: rgba(49, 52, 54, 0.9); }
+
+.right__content {
+  margin-top: 3.75rem;
+  margin-left: 6.25rem; }
+
+.content__accordeon {
+  margin-top: 2.8125rem; }
+
+.accordeon__text {
+  margin-left: 1.25rem; }
+
+.accordeon img {
+  float: left;
+  margin-top: 0.5rem; }
+
+.accordeon {
+  margin-bottom: 35px;
+  font-family: 'Gagalin';
+  color: white; }
+
+.accordeon__active {
+  color: #efad3a; }
+
+.active__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 0.9375rem;
+  font-size: 0.875rem;
+  font-family: 'Ubuntu';
+  color: white;
+  text-align: left;
+  display: none; }
+
+.active__block__text {
+  width: 14.5rem;
+  margin-left: 1.375rem;
+  line-height: 25px; }
+
+.active__block__img {
+  margin-top: 0.25rem; }
+
+.img__reverse {
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  -ms-transform: scaleY(-1);
+  transform: scaleY(-1); }
 
 /*# sourceMappingURL=main.css.map */
