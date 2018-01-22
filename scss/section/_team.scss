@@ -38,33 +38,33 @@
     color: white;
 }
 
+.active__block {
+    display: none;
+}
+
 .accordeon__active {
     color: #efad3a;
-}
-
-.active__block {
-    display: flex;
-    margin-left: rem(15px);
-    font-size: rem(14px);
-    font-family: 'Ubuntu';
-    color: white;
-    text-align: left;
-    /* display: none; */
-}
-
-.active__block__text {
-    width: rem(232px);
-    margin-left: rem(22px);
-    line-height: 25px
-}
-
-.active__block__img {
-    margin-top: rem(4px);
-}
-
-.img__reverse {
-    -moz-transform: scaleY(-1);
-    -o-transform: scaleY(-1);
-    -webkit-transform: scaleY(-1);
-    transform: scaleY(-1);
+    .active__block__text {
+        width: rem(232px);
+        margin-left: rem(22px);
+        line-height: 25px;
+        color: white
+    }
+    #str {
+        -moz-transform: scaleY(-1);
+        -o-transform: scaleY(-1);
+        -webkit-transform: scaleY(-1);
+        transform: scaleY(-1);
+    }
+    .active__block {
+        display: flex;
+        margin-left: rem(15px);
+        font-size: rem(14px);
+        font-family: 'Ubuntu';
+        color: white;
+        text-align: left;
+    }
+    .active__block__img {
+        margin-top: rem(6px);
+    }
 }
