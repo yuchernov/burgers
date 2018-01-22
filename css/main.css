@@ -453,7 +453,7 @@ a.new:after {
   font-family: 'Ubuntu';
   color: white;
   text-align: left;
-  display: none; }
+  /* display: none; */ }
 
 .active__block__text {
   width: 14.5rem;
