@@ -39,7 +39,8 @@
 }
 
 .active__block {
-    display: none;
+    overflow: hidden;
+    height: 0
 }
 
 .accordeon__active {
@@ -50,7 +51,7 @@
         line-height: 25px;
         color: white
     }
-    #str {
+    .str {
         -moz-transform: scaleY(-1);
         -o-transform: scaleY(-1);
         -webkit-transform: scaleY(-1);
@@ -63,6 +64,8 @@
         font-family: 'Ubuntu';
         color: white;
         text-align: left;
+        overflow: auto;
+        height: 100%
     }
     .active__block__img {
         margin-top: rem(6px);
