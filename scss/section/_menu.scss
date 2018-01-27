@@ -1,0 +1,74 @@
+.menu {
+    background-image: url('../img/bg/bg4.png');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    position: relative;
+}
+
+.menu__right {
+    display: flex;
+    height: 100%;
+    position: relative;
+    justify-content: flex-end
+}
+
+.accordeon__menu img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.menu__text {
+    font-family: 'Gagalin';
+    font-size: rem(72px);
+    color: white;
+    margin-right: auto;
+    margin-left: rem(104px);
+    margin-top: rem(104px);
+}
+
+.text__accordeon__first {
+    position: absolute;
+    bottom: rem(170px);
+    right: rem(65px);
+    font-family: 'Gagalin';
+    font-size: rem(40px);
+    color: white;
+    width: rem(270px);
+    -webkit-transform: rotate(270deg); //Chrome, Safari
+    -moz-transform: rotate(270deg); //Firefox
+    -o-transform: rotate(270deg); //Opera
+    -ms-transform: rotate(270deg); //IE
+    transform: rotate(270deg); //браузеры без префексов
+}
+
+.text__accordeon__second {
+    position: absolute;
+    bottom: rem(170px);
+    right: rem(-13px);
+    font-family: 'Gagalin';
+    font-size: rem(40px);
+    color: white;
+    width: rem(270px);
+    -webkit-transform: rotate(270deg); //Chrome, Safari
+    -moz-transform: rotate(270deg); //Firefox
+    -o-transform: rotate(270deg); //Opera
+    -ms-transform: rotate(270deg); //IE
+    transform: rotate(270deg); //браузеры без префексов
+}
+
+.text__accordeon__third {
+    position: absolute;
+    bottom: rem(170px);
+    right: rem(-93px);
+    font-family: 'Gagalin';
+    font-size: rem(40px);
+    color: white;
+    width: rem(270px);
+    -webkit-transform: rotate(270deg); //Chrome, Safari
+    -moz-transform: rotate(270deg); //Firefox
+    -o-transform: rotate(270deg); //Opera
+    -ms-transform: rotate(270deg); //IE
+    transform: rotate(270deg); //браузеры без префексов
+}
