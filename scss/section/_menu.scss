@@ -92,4 +92,11 @@
 #menu-title {
     color: white;
     margin-left: rem(104px);
+    @include tablets {
+        text-align: left;
+        padding-top: rem(50px);
+        margin-left: 0;
+        padding-left: rem(20px);
+        /* margin-left: 0px; */
+    }
 }

@@ -12,15 +12,26 @@
     width: 50%;
     right: rem(-0px);
     background: rgba(49, 52, 54, 0.9);
+    @include tablets {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
 
 .right__content {
     margin-top: rem(60px);
-    margin-left: rem(100px);
+    margin-left: rem(60px);
 }
 
 .content__accordeon {
     margin-top: rem(45px);
+    @include tablets {
+        text-align: center;
+        display: inline-block
+    }
 }
 
 .accordeon__text {
@@ -28,35 +39,56 @@
 }
 
 .accordeon img {
-    float: left;
+    /* float: left; */
+    /* width: 115px; */
     margin-top: rem(8px);
 }
 
+p.accordeon__text::before {
+    /* content: url('/img/content/Polygon.png'); */
+    margin-right: rem(10px);
+    content: "";
+    height: 0;
+    width: 0;
+    border: rem(6px) solid transparent;
+    border-top-width: 0;
+    border-bottom-color: #f7b33b;
+    transform: rotate(180deg);
+    display: inline-block
+}
+
 .accordeon {
-    margin-bottom: 35px;
+    margin-bottom: rem(35px);
     font-family: 'Gagalin';
     color: white;
 }
 
 .active__block {
     overflow: hidden;
-    height: 0
+    height: 0;
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .accordeon__active {
     color: #efad3a;
     .active__block__text {
-        width: rem(232px);
-        margin-left: rem(22px);
-        line-height: 25px;
-        color: white
+        width: rem(292px);
+        margin-left: rem(5px);
+        line-height: rem(25px);
+        color: white;
+        @include tablets {
+            text-align: center
+        }
     }
-    .str {
+    /*     .str {
         -moz-transform: scaleY(-1);
         -o-transform: scaleY(-1);
         -webkit-transform: scaleY(-1);
         transform: scaleY(-1);
-    }
+    } */
     .active__block {
         display: flex;
         margin-left: rem(15px);
@@ -70,4 +102,17 @@
     .active__block__img {
         margin-top: rem(6px);
     }
+    p.accordeon__text {
+        &::before {
+            transform: rotate(360deg);
+        }
+    }
+    /*     .accordeon__text {
+        &::before {
+            -moz-transform: scaleY(-1);
+            -o-transform: scaleY(-1);
+            -webkit-transform: scaleY(-1);
+            transform: scaleY(-1);
+        }
+    } */
 }

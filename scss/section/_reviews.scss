@@ -1,4 +1,4 @@
-.reviews {
+/* .reviews {
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
@@ -16,8 +16,10 @@
     justify-content: center;
     flex: 1 1 auto;
 }
+ */
 
-.line img {
+
+/* .line img {
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -26,6 +28,7 @@
 .img-line {
     width: 25%;
     position: relative;
+
 }
 
 .line__first {
@@ -75,4 +78,125 @@
     position: absolute;
     min-height: 100%;
     width: 100%;
+} */
+
+.header {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+
+.main {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+
+.footer {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+
+.comment {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    background: #0f0;
+    border: 1px solid #000;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    @include tablets {
+        flex: 0 0 50%;
+    }
+}
+
+.comments {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background: #f0f;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.comment::after {
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background: transparent;
+    z-index: 1;
+    transition: all .3s;
+}
+
+.comment:hover::after {
+    background: rgba(0, 0, 0, .5);
+}
+
+.comment:hover .comment__content {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.comment__content {
+    position: relative;
+    z-index: 2;
+    padding: 0 30px;
+    opacity: 0;
+    -webkit-transform: scale(.9);
+    -ms-transform: scale(.9);
+    transform: scale(.9);
+    transition: all .3s;
+}
+
+.comment__name {
+    font-size: 14px;
+    font-family: 'Gagalin', sans-serif;
+    color: white;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.comment__text {
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    line-height: 1.714;
+}
+
+.section {
+    height: 100vh;
+}
+
+@media screen and (max-width: 991px) {
+    html,
+    body {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    html,
+    body {
+        font-size: 12px;
+    }
 }
