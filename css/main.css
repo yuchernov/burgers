@@ -473,28 +473,28 @@ a.new:after {
     margin-top: 0.375rem; }
 
 .menu {
-  background-image: url("../img/bg/bg4.png");
+  background-image: url("/img/bg/bg4.png");
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;
   position: relative; }
 
 .firstmenu {
-  background-image: url("../img/content/accordeon1.png");
+  background-image: url("/img/content/accordeon1.png");
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;
   position: relative; }
 
 .secondmenu {
-  background-image: url("../img/content/accordeon2.png");
+  background-image: url("/img/content/accordeon2.png");
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;
   position: relative; }
 
 .thirdmenu {
-  background-image: url("../img/content/accordeon3.png");
+  background-image: url("/img/content/accordeon3.png");
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;
@@ -560,7 +560,7 @@ a.new:after {
   margin-left: 6.5rem; }
 
 .contacts {
-  background-image: url("../img/bg/bg5.png");
+  background-image: url("/img/bg/bg5.png");
   background-repeat: no-repeat;
   background-position: 100%;
   background-size: cover;
@@ -571,7 +571,7 @@ a.new:after {
   width: 100%;
   height: 8%;
   bottom: 0;
-  background-image: url("../img/content/footer.png");
+  background-image: url("/img/content/footer.png");
   background-repeat: no-repeat;
   background-position: 100%;
   background-size: cover;
@@ -598,7 +598,7 @@ a.new:after {
   font-weight: bold; }
 
 p.footer:before {
-  content: url("../img/content/phone.svg");
+  content: url("/img/content/phone.svg");
   margin-right: 0.5625rem; }
 
 .footer__right img {
@@ -620,7 +620,7 @@ p.footer:before {
     position: absolute;
 } */
 .form {
-  background-image: url("../img/bg/bg6.png");
+  background-image: url("/img/bg/bg6.png");
   background-repeat: no-repeat;
   background-position: 100%;
   background-size: cover;
