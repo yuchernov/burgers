@@ -11,7 +11,7 @@
     width: 100%;
     height: 8%;
     bottom: 0;
-    background-image: url('/img/content/footer.png');
+    background-image: url('../img/content/footer.png');
     background-repeat: no-repeat;
     background-position: 100%;
     background-size: cover;
@@ -38,7 +38,7 @@
 }
 
 p.footer:before {
-    content: url('/img/content/phone.svg');
+    content: url('../img/content/phone.svg');
     margin-right: rem(9px);
 }
 
