@@ -276,7 +276,8 @@ a.new:after {
       flex-direction: column;
       -webkit-box-align: center;
       -ms-flex-align: center;
-      align-items: center; } }
+      align-items: center;
+      /* margin-top: rem(175px); */ } }
 
 .hero__img,
 .hero__description {
