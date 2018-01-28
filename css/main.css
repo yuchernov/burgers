@@ -586,7 +586,8 @@ a.new:after {
   /* width: 50%; */
   color: white;
   font-size: 0.875rem;
-  margin-left: 5rem; }
+  margin-left: 5rem;
+  margin-top: 0.625rem; }
 
 .footer__right {
   margin-top: 1.5625rem;
@@ -618,5 +619,99 @@ p.footer:before {
     border-radius: 50%;
     position: absolute;
 } */
+.form {
+  background-image: url("../img/bg/bg6.png");
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: cover;
+  position: relative; }
+
+.form__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.zero {
+  width: 1.875rem; }
+
+form.form__mainform legend {
+  text-align: center;
+  padding-top: 8.625rem;
+  padding-bottom: 3.75rem; }
+
+.form form {
+  color: white;
+  font-size: 0.875rem; }
+
+input {
+  display: block;
+  border-radius: 0.3125rem;
+  height: 2.5rem;
+  width: 13.75rem;
+  margin-right: 0.9375rem; }
+
+.first__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.second__group {
+  margin-top: 2.5rem; }
+  .second__group input {
+    width: 28.5rem; }
+
+.third__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2.5rem; }
+  .third__group input {
+    width: 6.4375rem; }
+
+.second__first__group input {
+  width: 28.5rem;
+  height: 8.5625rem; }
+
+.second__second__group {
+  margin-top: 1.875rem; }
+
+.ul__second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.ul__second li {
+  margin-right: 0.9375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+li.form__class::before {
+  content: '';
+  display: block;
+  background: #e35028;
+  border-radius: 50%;
+  width: 1.125rem;
+  height: 1.125rem;
+  margin-right: 0.625rem;
+  border: 10px solid white; }
+
+.second__third__group {
+  margin-top: 1.875rem; }
+
+li.form__class__second::before {
+  content: '';
+  display: block;
+  background: #e35028;
+  width: 1.125rem;
+  height: 1.125rem;
+  margin-right: 0.625rem;
+  border: 10px solid white; }
+
+.second__fourth__group {
+  margin-top: 1.875rem; }
 
 /*# sourceMappingURL=main.css.map */
