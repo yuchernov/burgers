@@ -6,69 +6,90 @@
     position: relative;
 }
 
-.menu__right {
-    display: flex;
-    height: 100%;
+.firstmenu {
+    background-image: url('../../img/content/accordeon1.png');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
     position: relative;
-    justify-content: flex-end
 }
 
-.accordeon__menu img {
-    height: 100%;
-    object-fit: cover;
-    width: 100%;
+.secondmenu {
+    background-image: url('../../img/content/accordeon2.png');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    position: relative;
 }
 
-.menu__text {
+.thirdmenu {
+    background-image: url('../../img/content/accordeon3.png');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    position: relative;
+}
+
+.m-list {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.m-list__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.m-list__item_active .m-list__text {
+    max-width: 540px;
+    padding: 60px 60px 60px 30px;
+}
+
+.m-list__title {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: 80px;
+    background: rgba(47, 50, 52, .93);
+    font-size: 2.5rem;
+    position: relative;
+    cursor: pointer;
     font-family: 'Gagalin';
-    font-size: rem(72px);
     color: white;
-    margin-right: auto;
+}
+
+.m-list__rotation {
+    padding-left: 40px;
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    -webkit-transform: rotateZ(-90deg) translateY(-50%);
+    -ms-transform: rotate(-90deg) translateY(-50%);
+    transform: rotateZ(-90deg) translateY(-50%);
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+    white-space: nowrap;
+}
+
+.m-list__text {
+    max-width: 0;
+    overflow: hidden;
+    background: rgba(47, 50, 52, .93);
+    color: #fff;
+    font-size: .875rem;
+    padding: 0;
+    transition: all 1s;
+}
+
+#menu-title {
+    color: white;
     margin-left: rem(104px);
-    margin-top: rem(104px);
-}
-
-.text__accordeon__first {
-    position: absolute;
-    bottom: rem(170px);
-    right: rem(65px);
-    font-family: 'Gagalin';
-    font-size: rem(40px);
-    color: white;
-    width: rem(270px);
-    -webkit-transform: rotate(270deg); //Chrome, Safari
-    -moz-transform: rotate(270deg); //Firefox
-    -o-transform: rotate(270deg); //Opera
-    -ms-transform: rotate(270deg); //IE
-    transform: rotate(270deg); //браузеры без префексов
-}
-
-.text__accordeon__second {
-    position: absolute;
-    bottom: rem(170px);
-    right: rem(-13px);
-    font-family: 'Gagalin';
-    font-size: rem(40px);
-    color: white;
-    width: rem(270px);
-    -webkit-transform: rotate(270deg); //Chrome, Safari
-    -moz-transform: rotate(270deg); //Firefox
-    -o-transform: rotate(270deg); //Opera
-    -ms-transform: rotate(270deg); //IE
-    transform: rotate(270deg); //браузеры без префексов
-}
-
-.text__accordeon__third {
-    position: absolute;
-    bottom: rem(170px);
-    right: rem(-93px);
-    font-family: 'Gagalin';
-    font-size: rem(40px);
-    color: white;
-    width: rem(270px);
-    -webkit-transform: rotate(270deg); //Chrome, Safari
-    -moz-transform: rotate(270deg); //Firefox
-    -o-transform: rotate(270deg); //Opera
-    -ms-transform: rotate(270deg); //IE
-    transform: rotate(270deg); //браузеры без префексов
 }
