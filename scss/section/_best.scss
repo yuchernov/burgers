@@ -20,12 +20,28 @@
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around;
     text-align: center;
-    margin-top: rem(250px);
+    margin-top: rem(250px); */
+    @include phones {
+        flex-direction: column;
+    }
 }
 
-.content__top {
+.best__item {
+    margin-bottom: rem(50px);
+    padding: 0 rem(15px);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    @include phones {
+        flex-direction: row;
+        text-align: left;
+        margin-left: rem(10px);
+    }
+}
+
+.content span {
     font-size: rem(24.12px);
     color: #2f3234;
     font-family: 'Gagalin';
@@ -35,4 +51,17 @@
     font-size: rem(14.01px);
     color: #8b8987;
     width: rem(272px);
+}
+
+.best__item img {
+    height: rem(120px);
+    width: rem(110px);
+    display: block;
+    margin: 0 auto;
+}
+
+.content {
+    @include phones {
+        margin-left: rem(15px);
+    }
 }

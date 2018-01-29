@@ -1,5 +1,5 @@
 .contacts {
-    background-image: url('/img/bg/bg5.png');
+    background-image: url('../img/bg/bg5.png');
     background-repeat: no-repeat;
     background-position: 100%;
     background-size: cover;
@@ -17,6 +17,11 @@
     background-size: cover;
     display: flex;
     justify-content: space-between;
+    @include phones {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center
+    }
 }
 
 .footer__left {
@@ -24,11 +29,19 @@
     font-size: rem(14px);
     margin-left: rem(80px);
     margin-top: rem(10px);
+    @include phones {
+        margin-left: rem(30px);
+    }
 }
 
 .footer__right {
     margin-top: rem(25px);
     margin-right: rem(80px);
+    @include phones {
+        margin-top: rem(0px);
+        margin-right: rem(0px);
+        margin-left: rem(30px);
+    }
 }
 
 .footer {
@@ -42,9 +55,13 @@ p.footer:before {
 }
 
 .footer__right img {
-    height: 30px;
-    width: 40px;
+    height: rem(30px);
+    width: rem(40px);
     margin-right: rem(18px);
+    @include phones {
+        height: rem(20px);
+        width: rem(30px);
+    }
 }
 
 

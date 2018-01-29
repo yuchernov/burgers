@@ -9,6 +9,11 @@
 .form__content {
     display: flex;
     justify-content: center;
+    @include tablets {
+        margin-left: 0;
+        flex-direction: column;
+        align-items: center
+    }
 }
 
 .zero {
@@ -98,4 +103,12 @@ li.form__class__second::before {
 
 .second__fourth__group {
     margin-top: rem(30px);
+}
+
+@media screen and (max-width: 854px) {
+    .form__content {
+        margin-left: 0;
+        flex-direction: column;
+        align-items: center
+    }
 }

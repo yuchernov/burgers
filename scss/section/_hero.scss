@@ -11,7 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 10px;
+    padding-top: rem(10px);
 }
 
 .header__logo {
@@ -37,7 +37,7 @@
         content: ' ';
         @include circle(5px,
         #fff);
-        margin: 0 12px;
+        margin: 0 rem(12px);
     }
     &:last-child:after {
         display: none;
@@ -70,21 +70,31 @@
 .hero__content {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     flex-grow: 1;
     align-items: center;
     padding-bottom: 15%;
     @include tablets {
         flex-direction: column;
         align-items: center;
-        /* margin-top: rem(175px); */
+        margin-top: rem(395px);
+    }
+    @include phones {
+        width: 90%;
     }
 }
 
-.hero__img,
+.hero-img,
 .hero__description {
     flex-basis: 50%;
     display: flex;
+}
+
+.hero-img img {
+    @include phones {
+        width: 300px;
+        height: 340px;
+    }
 }
 
 .hero__description {
@@ -99,10 +109,13 @@
     font-weight: 300;
     line-height: 1.42;
     margin: 0;
-    padding-top: 60px;
+    padding-top: rem(60px);
     @include tablets {
         padding-top: 0;
         text-align: center;
+    }
+    @include phones {
+        font-size: rem(63px)
     }
 }
 
@@ -116,14 +129,25 @@
         text-align: center;
         /* width: rem(200px); */
     }
+    @include phones {
+        font-size: rem(54px)
+    }
 }
 
 .hero__content__bottom {
-    margin-bottom: 25px;
+    margin-bottom: rem(25px);
 }
 
 .header__menu {
     @include tablets() {
         display: none;
+    }
+}
+
+@media screen and (max-width: 854px) {
+    .hero__content {
+        flex-direction: column;
+        text-align: center;
+        margin-top: rem(200px);
     }
 }
