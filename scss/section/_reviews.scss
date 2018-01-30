@@ -160,7 +160,7 @@
 .comment__content {
     position: relative;
     z-index: 2;
-    padding: 0 30px;
+    padding: 0 rem(30px);
     opacity: 0;
     -webkit-transform: scale(.9);
     -ms-transform: scale(.9);
@@ -169,15 +169,15 @@
 }
 
 .comment__name {
-    font-size: 14px;
+    font-size: rem(14px);
     font-family: 'Gagalin', sans-serif;
     color: white;
-    margin-bottom: 30px;
+    margin-bottom: rem(30px);
     text-transform: uppercase;
 }
 
 .comment__text {
-    font-size: 14px;
+    font-size: rem(14px);
     font-family: 'Ubuntu', sans-serif;
     color: white;
     line-height: 1.714;
@@ -190,13 +190,13 @@
 @media screen and (max-width: 991px) {
     html,
     body {
-        font-size: 14px;
+        font-size: rem(14px);
     }
 }
 
 @media screen and (max-width: 767px) {
     html,
     body {
-        font-size: 12px;
+        font-size: rem(12px);
     }
 }

@@ -24,6 +24,9 @@
 .right__content {
     margin-top: rem(60px);
     margin-left: rem(60px);
+    @include phones {
+        margin-left: rem(10px);
+    }
 }
 
 .content__accordeon {

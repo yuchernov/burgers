@@ -37,16 +37,25 @@ input {
     height: rem(40px);
     width: rem(220px);
     margin-right: rem(15px);
+    @include phones {
+        width: rem(120px);
+    }
 }
 
 .first__group {
     display: flex;
+    @include phones {
+        /* justify-content: center */
+    }
 }
 
 .second__group {
     margin-top: rem(40px);
     & input {
         width: rem(456px);
+        @include phones {
+            width: rem(256px);
+        }
     }
 }
 
@@ -55,12 +64,21 @@ input {
     margin-top: rem(40px);
     & input {
         width: rem(103px);
+        @include phones {
+            width: rem(58px);
+            margin-bottom: rem(10px);
+        }
     }
 }
 
 .second__first__group input {
     width: rem(456px);
     height: rem(137px);
+    @include phones {
+        width: rem(296px);
+        margin-right: rem(0px);
+        margin: 0 auto;
+    }
 }
 
 .second__second__group {
